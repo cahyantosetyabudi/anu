@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ecf0f1"
+    tools:context="com.example.zmartd3vil.mockupquotimefix.Reminder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ced0d1">
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reminder"
+            android:id="@+id/field_reminder"
+            android:textSize="25sp"
+            android:background="#ecf0f1"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            />
+
+        <Switch
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pop up reminder"
+            android:id="@+id/switch_popup_reminder"
+            android:textSize="25sp"
+            android:background="#ecf0f1"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Navbar reminder"
+            android:id="@+id/switch_navbar_reminder"
+            android:textSize="25sp"
+            android:layout_marginTop="2dp"
+            android:background="#ecf0f1"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kuota hampir habis"
+            android:id="@+id/switch_kuota_hampir_habis"
+            android:textSize="25sp"
+            android:layout_marginTop="2dp"
+            android:background="#ecf0f1"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reminder kuota baru"
+            android:id="@+id/switch_reminder_kuota_baru"
+            android:textSize="25sp"
+            android:layout_marginTop="2dp"
+            android:background="#ecf0f1"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reminder kuota harian"
+            android:id="@+id/switch_reminder_kuota_harian"
+            android:textSize="25sp"
+            android:layout_marginTop="2dp"
+            android:background="#ecf0f1"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="2dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

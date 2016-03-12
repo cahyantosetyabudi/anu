@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zmartd3vil.mockupquotimefix.Kuota">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="#6568ce">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_profilling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 Jam"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:paddingTop="10sp"
+            android:paddingLeft="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sisa"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="63sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2,5 GB"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 GB"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20sp"
+            android:layout_marginRight="20sp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="#ced0d1"
+        >
+
+        <TextView
+            android:id="@+id/field_jangka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:alpha="0.5"
+            android:text="24 Jam"
+            android:background="#ecf0f1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/field_jangka_atur"
+            android:layout_alignEnd="@+id/field_jangka_atur"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/linearLayout" />
+
+        <RelativeLayout
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/field_jangka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
+
+            <Button
+                android:id="@+id/tbl_set"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:alpha="0.5"
+                android:text="SET"
+                android:background="#ecf0f1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_alignBottom="@+id/img_rewind"
+                android:layout_toLeftOf="@+id/img_rewind"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:background="#ecf0f1"
+                android:id="@+id/img_rewind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rewind"
+                android:alpha="0.5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/field_jangka_atur"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:textSize="20sp"
+            android:alpha="0.5"
+            android:text="00.00 - 06.00"
+            android:background="#ecf0f1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_below="@+id/field_jangka"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2"
+            android:layout_alignTop="@+id/field_jangka_atur"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/field_jangka_atur"
+            android:layout_toEndOf="@+id/field_jangka_atur">
+
+            <Button
+                android:id="@+id/tbl_set_atur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:alpha="0.5"
+                android:text="SET"
+                android:background="#ecf0f1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_alignBottom="@+id/img_rewind2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/img_rewind2"
+                android:layout_toStartOf="@+id/img_rewind2"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:background="#ecf0f1"
+                android:id="@+id/img_rewind2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rewind"
+                android:alpha="0.5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

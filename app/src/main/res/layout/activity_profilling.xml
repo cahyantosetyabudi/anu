@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zmartd3vil.mockupquotimefix.Profilling">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="#6568ce">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background_profilling"/>
+
+        <TextView
+            android:id="@+id/field_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET LIMIT"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/field_sisa_kuota"
+            android:layout_below="@id/field_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="512 MB"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/field_usage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATA USAGE WARNING LEVEL"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#9b7777" />
+        <SeekBar
+            android:id="@+id/seekbar_kuota"
+            android:layout_below="@id/field_usage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        <TextView
+            android:id="@+id/field_reset"
+            android:layout_below="@id/seekbar_kuota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USAGE RESET DATE"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#9b7777" />
+
+        <EditText
+            android:layout_below="@id/field_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:hint="1"
+            android:id="@+id/editText"
+            android:layout_marginLeft="20dp"
+            android:textSize="30sp"
+            android:textColor="#9b7777"
+            android:textColorHint="#9b7777" />
+        <TextView
+            android:layout_below="@id/field_reset"
+            android:layout_toRightOf="@id/editText"
+            android:id="@+id/reset_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Days"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#9b7777" />
+
+    </RelativeLayout>
+
+</LinearLayout>
