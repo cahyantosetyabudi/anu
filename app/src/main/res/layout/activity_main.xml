@@ -3,15 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.example.zmartd3vil.mockupquotimefix.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.5"
+        android:layout_weight="0.4"
         android:background="#6568ce">
 
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/arc_progress"
+            android:background="#6568ce"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            custom:arc_progress="55"
+            custom:arc_bottom_text="@string/text_kuota"
+            custom:arc_bottom_text_size="20sp"
+            custom:arc_text_color="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <!--
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -20,45 +34,49 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="24 Jam"
+            android:text="@string/field_sisa"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="63sp"
+            android:id="@+id/textView3" />
+        //-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cat_kuota"
             android:textSize="20sp"
             android:textColor="#FFFFFF"
             android:paddingTop="10sp"
-            android:paddingLeft="10sp" />
+            android:paddingLeft="30sp"
+            android:id="@+id/textView6" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="sisa"
+            android:text="@string/text_sisa"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:textSize="30sp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="63sp" />
+            android:id="@+id/textView4"
+            android:layout_below="@+id/arc_progress"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2,5 GB"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="30sp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4 GB"
+            android:text="@string/kuota_awal"
             android:textSize="25sp"
             android:textColor="#FFFFFF"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_marginBottom="20sp"
-            android:layout_marginRight="20sp"/>
+            android:layout_marginRight="20sp"
+            android:id="@+id/textView5" />
 
     </RelativeLayout>
     <LinearLayout
@@ -89,9 +107,9 @@
                     android:padding="10dp"
                     android:alpha="0.5" />
                 <TextView
+                    android:text="@string/text_kuota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Kuota"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:id="@+id/textkuota"
@@ -123,7 +141,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Profilling"
+                    android:text="@string/text_profilling"
                     android:textStyle="bold"
                     android:id="@+id/textView"
                     android:textSize="20sp"
@@ -159,7 +177,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Reminder"
+                    android:text="@string/text_reminder"
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:textAlignment="center"
@@ -186,7 +204,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Statistik"
+                    android:text="@string/text_statistik"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textAlignment="center"

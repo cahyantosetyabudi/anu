@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">MockupQuotimeFix</string>
+    <string name="text_kuota">Kuota</string>
+    <string name="text_profilling">Profilling</string>
+    <string name="text_reminder">Reminder</string>
+    <string name="text_statistik">Statistik</string>
+    <string name="cat_kuota">24 Jam</string>
+    <string name="field_sisa">sisa</string>
+    <string name="text_sisa">2,5 GB</string>
+    <string name="kuota_awal">4 GB</string>
+    <string name="reminder_popup">Pop up reminder</string>
+    <string name="reminder_navbar">Navbar reminder</string>
+    <string name="reminder_kuota">Kuota hampir habis</string>
+    <string name="reminder_kuota_baru">Reminder Kuota baru</string>
+    <string name="reminder_harian">Reminder kuota harian</string>
+    <string name="field_limit">SET LIMIT</string>
+    <string name="text_limit">512 MB</string>
+    <string name="data_usage_warning">DATA USAGE WARNING LEVEL</string>
+    <string name="usage_reset_date">USAGE RESET DATE</string>
+    <string name="days">Days</string>
+    <string name="usage_daily">Today Mobile usage 97,8MB</string>
+    <string name="txtview_kuota_paket">24 Jam</string>
+    <string name="txtview_kuota_sisa">sisa</string>
+    <string name="txtview_kuota_sisakuota">2,5 GB</string>
+    <string name="txtview_kuota_paketkuota">4 GB</string>
+    <string name="txtview_kuota_pilihpaket1">24 Jam</string>
+    <string name="txtview_kuota_set">SET</string>
+    <string name="txtview_kuota_pilihpaket2">00.00 - 06.00</string>
 </resources>

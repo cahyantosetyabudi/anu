@@ -11,10 +11,9 @@
     tools:context="com.example.zmartd3vil.mockupquotimefix.Statistik">
 
     <TextView
+        android:id="@+id/statistik"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Today Mobile usage 97,8MB"/>
-
-    
+        android:text="@string/usage_daily"/>
 
 </RelativeLayout>
